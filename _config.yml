@@ -77,6 +77,10 @@ pagination_dir: page
 # Disqus
 disqus_shortname:
 
+duoshuo_shortname: totoo
+
+baidu_analytics: 7d7157a5836d43e3ad7dbd42e82697f3
+
 # Extensions
 ## Plugins: https://github.com/hexojs/hexo/wiki/Plugins
 ## Themes: https://github.com/hexojs/hexo/wiki/Themes
