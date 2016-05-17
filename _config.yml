@@ -4,8 +4,8 @@
 
 # Site
 title: Totoo's Blog
-subtitle: hungrier than hungrier
-description: 菜鸟程序员快快成长吧
+subtitle: do something interesting
+description: do something interesting
 author: totoo
 email: guoshangshu@gmail.com
 language: zh-Hans
@@ -85,9 +85,13 @@ baidu_analytics: 7d7157a5836d43e3ad7dbd42e82697f3
 ## Plugins: https://github.com/hexojs/hexo/wiki/Plugins
 ## Themes: https://github.com/hexojs/hexo/wiki/Themes
 #theme: landscape
-#theme: jacman
-theme: next
-exclude_generator:
+#theme: light
+#theme: yilia
+theme: jacman
+#theme: next
+#theme: tranquilpeak
+#post_asset_folder: true
+#exclude_generator:
 
 # Deployment
 ## Docs: http://hexo.io/docs/deployment.html
