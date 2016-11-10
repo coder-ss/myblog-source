@@ -21,6 +21,7 @@ category_dir: categories
 code_dir: downloads/code
 permalink_defaults:
 about_dir: 
+avatar: /favicon.png
 
 # Directory
 source_dir: source
