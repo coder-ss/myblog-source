@@ -31,7 +31,7 @@ f(\boldsymbol{x}) = h_{\boldsymbol{\theta}}(\boldsymbol{x}) &= \theta_0+\theta_1
 ## 损失函数（loss function）
 
 在线性回归的概念中已经知道了线性回归的模型，那么如何求解 $ \boldsymbol{\theta}$ 呢？关键在于如何衡量 $h\_\boldsymbol{\theta}(\boldsymbol{x})$ 与 $y$ 之间的差别。均方误差 $\sum \limits\_{i=1}^{m}(h\_\boldsymbol{\theta} (x\_{i})-y\_{i})^2$ 是回归任务中最常用的性能度量，因此我们可以试图让均方误差最小化。
-$$ \boldsymbol{\theta}^* = \underset{\boldsymbol{\theta}}{\arg\min} \sum\_{i=1}^{m}(h\_\boldsymbol{\theta}(x\_{i})-y\_{i})^2$$
+$$ \boldsymbol{\theta}^* = \underset{\boldsymbol{\theta}}{\arg\min} \sum_{i=1}^{m}(h_\boldsymbol{\theta}(x_{i})-y_{i})^2$$
 均方误差对应了常用的欧几里德距离（欧氏距离，Euclidean distance）。基于均方误差最小化进行模型求解的方法称为“最小二乘法”（least square method）。当向量$\boldsymbol{w}$为标量$w$时，最小二乘法就是试图找到一条直线，使所有样本到直线的欧式距离之和最小。
 
 ## 回归方程求解
