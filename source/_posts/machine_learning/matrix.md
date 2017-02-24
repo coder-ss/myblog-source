@@ -93,7 +93,7 @@ $$ 	x\left[ \begin{aligned}2 \\ 1 \\ \end{aligned}\right]+y\left[ \begin{aligned
 > **基础概念：**
 > 
 > 线性组合：一些向量的任意标量乘法之和
-> $ span\{\boldsymbol{v_1},\boldsymbol{v_2},...,\boldsymbol{v_p}\} $：所有可以表示成 $\boldsymbol{v_1},...,\boldsymbol{v_p}$ 的线性组合的向量集合（所有可以由 $\boldsymbol{v_1},...,\boldsymbol{v_p}$ 线性表出的向量的集合）
+> $ \text{span} \lbrace \boldsymbol{v_1},\boldsymbol{v_2},...,\boldsymbol{v_p} \rbrace $：所有可以表示成 $\boldsymbol{v_1},...,\boldsymbol{v_p}$ 的线性组合的向量集合（所有可以由 $\boldsymbol{v_1},...,\boldsymbol{v_p}$ 线性表出的向量的集合）
 
 ### 列空间（column space）
 
@@ -101,11 +101,11 @@ $ m \times n $ 维矩阵 $ A $ 的**列空间** $ C(A) $ 是由 $ A $ 的列的�
 $ C(A) $ 中的一个典型向量可以写成 $ A\boldsymbol{x} $ 的形式，其中 $ \boldsymbol{x} $ 为某向量，因为 $ A\boldsymbol{x} $ 表示 $ A $ 的列向量的线性组合。即$ C(A) $ 是线性变换 $ \boldsymbol{x} \mapsto A\boldsymbol{x} $ 的值域。
 
 
-- $ C(A) $ 是 $\mathbb{R}^m$ 的一个子空间
+- $ C(A) $ 是 $\mathbb{R}^m$ 的一个子空间	
 - $ A $的一个最大线性无关向量组就是 $ C(A) $ 的一组基。
 
 > **例：**
-矩阵$ A＝ \left[ \begin{matrix} 1 & 0 \\\\ 4 & 3 \\\\ 2 & 3 \end{matrix}\right] $ 的列空间 $ C(A)=span\lbrace \boldsymbol{a_1},\boldsymbol{a_2}\rbrace $ 是 $ \mathbb{R}^3 $ 的一个子空间 ，其中 $ \boldsymbol{a_1}=\left[ \begin{matrix} 1 \\\\ 4 \\\\ 2 \end{matrix}\right] $、$ \boldsymbol{a_2}=\left[ \begin{matrix} 0 \\\\ 3 \\\\ 3 \end{matrix}\right] $
+矩阵$ A＝ \left[ \begin{matrix} 1 & 0 \\\\ 4 & 3 \\\\ 2 & 3 \end{matrix}\right] $ 的列空间 $ C(A)= \text{span} \lbrace \boldsymbol{a_1},\boldsymbol{a_2}\rbrace $ 是 $ \mathbb{R}^3 $ 的一个子空间 ，其中 $ \boldsymbol{a_1}=\left[ \begin{matrix} 1 \\\\ 4 \\\\ 2 \end{matrix}\right] $、$ \boldsymbol{a_2}=\left[ \begin{matrix} 0 \\\\ 3 \\\\ 3 \end{matrix}\right] $
 
 ### 零空间（null space）
 
@@ -121,7 +121,7 @@ $ m \times n $ 维矩阵 $ A $ 的零空间 $ N(A) $ 是齐次方程 $ A\boldsym
 $$ \left[ \begin{matrix} x_1 \\ x_2 \\ x_3 \\ x_4 \end{matrix}\right]=c_1\left[ \begin{matrix}-2\\0\\1\\0 \end{matrix}\right] + c_2\left[ \begin{matrix}0\\-2\\0\\1 \end{matrix}\right] $$
 所以，零空间 $ N(A) $ 为 $ \mathbb{R}^4 $ 的一个子空间
 为
-$ N(A)=span\{\boldsymbol{v_1},\boldsymbol{v_2}\} $，其中$ \boldsymbol{v_1}=\left[ \begin{matrix}-2\\\\0\\\\1\\\\0 \end{matrix}\right] $、$ \boldsymbol{v_1}=\left[ \begin{matrix}0\\\\-2\\\\0\\\\1 \end{matrix}\right] $
+$ N(A)= \text{span} \lbrace \boldsymbol{v_1},\boldsymbol{v_2} \rbrace $，其中$ \boldsymbol{v_1}=\left[ \begin{matrix}-2\\\\0\\\\1\\\\0 \end{matrix}\right] $、$ \boldsymbol{v_1}=\left[ \begin{matrix}0\\\\-2\\\\0\\\\1 \end{matrix}\right] $
 $ N(A) $ 为 $ \mathbb{R}^4 $ 的一个子空间
 
 
@@ -178,10 +178,10 @@ $ A\boldsymbol{x}=b $ 的解
 变换 $ \boldsymbol{x}\mapsto A\boldsymbol{x} $ 与变换 $ \boldsymbol{x}\mapsto\lambda\boldsymbol{x} $ 是等价的。即，经过变换 $ \boldsymbol{x}\mapsto A\boldsymbol{x} $ 后的向量与 $\boldsymbol{x}$ 向量共线（方向相同或相反）。
 
 > **例：**
-给定矩阵 $ A=\left[\begin{matrix} 4&1\\1&4 \end{matrix}\right] $，
-对 $ \boldsymbol{x_1}=\left[\begin{matrix} 1\\0\end {matrix}\right] $，有 $ A\boldsymbol{x} =\left[\begin{matrix} 4\\1\end {matrix}\right] $；
-对 $ \boldsymbol{x_2}=\left[\begin{matrix} 0\\1\end {matrix}\right] $，有 $ A\boldsymbol{x}=\left[ \begin{matrix} 1\\4\end {matrix}\right] $；
-对 $ \boldsymbol{x_3}=\left[\begin{matrix} 1\\1\end {matrix}\right] $，有 $ A\boldsymbol{x}=5\left[ \begin{matrix} 1\\1\end {matrix}\right] =5\boldsymbol{x_3}$。
+给定矩阵 $ A=\left[\begin{matrix} 4&1 \\\\ 1&4 \end{matrix}\right] $，
+对 $ \boldsymbol{x_1}=\left[\begin{matrix} 1 \\\\ 0\end {matrix}\right] $，有 $ A\boldsymbol{x} =\left[\begin{matrix} 4 \\\\ 1\end {matrix}\right] $；
+对 $ \boldsymbol{x_2}=\left[\begin{matrix} 0 \\\\ 1\end {matrix}\right] $，有 $ A\boldsymbol{x}=\left[ \begin{matrix} 1 \\\\ 4\end {matrix}\right] $；
+对 $ \boldsymbol{x_3}=\left[\begin{matrix} 1 \\\\ 1\end {matrix}\right] $，有 $ A\boldsymbol{x}=5\left[ \begin{matrix} 1 \\\\ 1\end {matrix}\right] =5\boldsymbol{x_3}$。
 >![Alt text](http://7qn7rt.com1.z0.glb.clouddn.com/ml/matrix/eigen_value.png)
 
 
@@ -211,7 +211,7 @@ A(\boldsymbol{p_1},\boldsymbol{p_2},...,\boldsymbol{p_n}) &=
 \end{aligned}
 $$
 >于是
->$$A\boldsymbol{p}_i=\lambda_i\boldsymbol{p_i} (i=1,2,...,n)$$
+>$$A\boldsymbol{p}_i=\lambda_i\boldsymbol{p_i} \ (i=1,2,...,n)$$
 >可见 $\lambda_i$ 是$A$ 的特征值，而 $P$ 的列向量 $\boldsymbol{p_i}$ 就是 $A$ 的对应于特征值 $\lambda_i$ 的特征向量。
 >而且，因为P可逆，所以 $\boldsymbol{p_1},\boldsymbol{p_2},...,\boldsymbol{p_n}$ 线性无关。
 
@@ -221,7 +221,7 @@ $$
 - $A$ 特征值为实数。且有 $n$ 个特征值（包含重复的特征值）
 - $A$ 的不同特征值对应的特征向量相互正交（$\boldsymbol{p_1}^T\boldsymbol{p_2}=0$）
 - 秩$r=Rank(A)\leq n$，即$$\underbrace{ |\lambda_1|\geq |\lambda_2|\geq ...\geq|\lambda_r|}_{r}>\underbrace{\lambda_{r+1}=...=\lambda_n}_{n-r}=0$$
-- $Rank(A^TA)=Rank(AA^T)=Rank(A)=Rank(\Lambda)$
+- $ \text{Rank} (A^TA) = \text{Rank} (AA^T) = \text{Rank}(A) = \text{Rank}(\Lambda)$
 - $A$ 可正交对角化
 
 > **证明不同特征值（$\lambda_1\neq \lambda_2$）对应的特征向量正交（$\boldsymbol{p_1^T\boldsymbol{p_2}}=0$）：**
@@ -256,7 +256,7 @@ f(x_1,x_2,\cdots,x_n)&=a_{11}x_1^2+a_{22}x_2^2+\cdots+a_{nn}x_n^2 \\
 &\quad+2a_{12}x_1x_2+2a_{13}x_1x_3+\cdots+2a_{n-1,n}x_{n-1}x_n
 \end{align*}$$
 > 称为二次型（所有项全部为2次）
-> 当 $j>i$ 时，取$a_{ij}=a_{ji}$，则$2a_{ij}x_ix_j=a_{ij}x_ix_j+a_{ji}x_jx_i$，于是
+> 当 $j>i$ 时，取$a\_{ij}=a\_{ji}$，则$2a\_{ij}x\_i x\_j=a\_{ij} x\_i x\_j + a\_{ji} x\_j x\_i$，于是
 $$\begin{align*}
 f&=a_{11}x_1^2+a_{12}x_1x_2+\cdots+a_{1n}x_1x_n \\
 &\quad+a_{21}x_2x_1+a_{22}x_2^2+\cdots+a_{2n}x_2x_n \\
@@ -328,7 +328,7 @@ $$Q=P^{-1}=P^T$$
 &=\left[\begin{matrix} \frac{1}{\sqrt{2}} &\frac{1}{\sqrt{2}}\\ -\frac{1}{\sqrt{2}}&\frac{1}{\sqrt{2}}  \end{matrix}\right] \left[\begin{matrix}-1&-1&0&2&0 \\ -2&0&0&1&1\end{matrix}\right] \\
 &=\left[\begin{matrix}-\frac{3}{\sqrt{2}}&-\frac{1}{\sqrt{2}}&0&\frac{3}{\sqrt{2}}&\frac{1}{\sqrt{2}} \\ -\frac{1}{\sqrt{2}} & \frac{1}{\sqrt{2}} &0&-\frac{1}{\sqrt{2}}& \frac{1}{\sqrt{2}}\end{matrix}\right]
 \end{align*}$$
-> 可以观察到Y中的每一行，都是X的一个特征向量的转置与X相乘的结果，即 $Y=\left[\begin{matrix}y_1^T\\y_2^T\end{matrix}\right]=\left[\begin{matrix}\boldsymbol{p_1^T}X\\ \boldsymbol{p_2^T}X\end{matrix}\right]$
+> 可以观察到Y中的每一行，都是X的一个特征向量的转置与X相乘的结果，即 $Y=\left[\begin{matrix}y_1^T \\\\ y_2^T\end{matrix}\right]=\left[\begin{matrix}\boldsymbol{p_1^T}X \\\\ \boldsymbol{p_2^T}X\end{matrix}\right]$
 
 再考虑降维。
 上面例子中$C_X$ 的两个特征值 $\lambda_1=2$、$\lambda_2=\frac{2}{5}$，相对来说 $\lambda_1$ 比 $\lambda_2$大不少，而
